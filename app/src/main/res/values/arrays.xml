@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status_hubungan_array">
+        <item>Kepala Keluarga</item>
+        <item>Istri</item>
+        <item>Anak</item>
+        <item>Menantu</item>
+        <item>Cucu</item>
+        <item>Orang Tua</item>
+        <item>Mertua</item>
+        <item>Famili Lain</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="agama_array">
+        <item>Islam</item>
+        <item>Kristen Protestan</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Khonghucu</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="status_perkawinan_array">
+        <item>Belum Kawin</item>
+        <item>Kawin</item>
+        <item>Cerai Hidup</item>
+        <item>Cerai Mati</item>
+    </string-array>
+
+    <string-array name="kewarganegaraan_array">
+        <item>WNI</item>
+        <item>WNA</item>
+    </string-array>
+
+    <string-array name="pendidikan_array">
+        <item>Tidak / Belum Sekolah</item>
+        <item>SD / Sederajat</item>
+        <item>SMP / Sederajat</item>
+        <item>SMA / SMK / Sederajat</item>
+        <item>Diploma (D1 - D3)</item>
+        <item>Sarjana (S1 / D4)</item>
+        <item>Magister (S2)</item>
+        <item>Doktor (S3)</item>
+    </string-array>
+</resources>

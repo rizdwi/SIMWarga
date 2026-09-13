@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboard_fragment">
+
+    <fragment
+        android:id="@+id/dashboard_fragment"
+        android:name="com.simwarga.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_keluarga_list"
+            app:destination="@id/keluarga_list_fragment" />
+        <action
+            android:id="@+id/action_dashboard_to_keluarga_form"
+            app:destination="@id/keluarga_form_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/keluarga_list_fragment"
+        android:name="com.simwarga.ui.keluarga.KeluargaListFragment"
+        android:label="@string/nav_keluarga"
+        tools:layout="@layout/fragment_keluarga_list">
+        <action
+            android:id="@+id/action_keluarga_list_to_keluarga_detail"
+            app:destination="@id/keluarga_detail_fragment" />
+        <action
+            android:id="@+id/action_keluarga_list_to_keluarga_form"
+            app:destination="@id/keluarga_form_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cari_fragment"
+        android:name="com.simwarga.ui.cari.CariFragment"
+        android:label="@string/nav_cari"
+        tools:layout="@layout/fragment_cari">
+        <action
+            android:id="@+id/action_cari_to_keluarga_detail"
+            app:destination="@id/keluarga_detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/backup_fragment"
+        android:name="com.simwarga.ui.backup.BackupFragment"
+        android:label="@string/nav_backup"
+        tools:layout="@layout/fragment_backup" />
+
+    <fragment
+        android:id="@+id/keluarga_detail_fragment"
+        android:name="com.simwarga.ui.keluarga.KeluargaDetailFragment"
+        android:label="@string/keluarga_detail_judul"
+        tools:layout="@layout/fragment_keluarga_detail">
+        <argument
+            android:name="kkId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_keluarga_detail_to_keluarga_form"
+            app:destination="@id/keluarga_form_fragment" />
+        <action
+            android:id="@+id/action_keluarga_detail_to_anggota_form"
+            app:destination="@id/anggota_form_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/keluarga_form_fragment"
+        android:name="com.simwarga.ui.keluarga.KeluargaFormFragment"
+        android:label="@string/form_kk_tambah_judul"
+        tools:layout="@layout/fragment_keluarga_form">
+        <argument
+            android:name="kkId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/anggota_form_fragment"
+        android:name="com.simwarga.ui.anggota.AnggotaFormFragment"
+        android:label="@string/form_anggota_tambah_judul"
+        tools:layout="@layout/fragment_anggota_form">
+        <argument
+            android:name="kkId"
+            app:argType="integer" />
+        <argument
+            android:name="anggotaId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

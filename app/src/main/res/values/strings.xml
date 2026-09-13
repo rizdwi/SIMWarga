@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">SIMWarga</string>
+    <string name="app_subtitle">Pendataan KK &amp; KTP RT/RW (Offline)</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_keluarga">Daftar KK</string>
+    <string name="nav_cari">Pencarian</string>
+    <string name="nav_backup">Excel &amp; Data</string>
+
+    <!-- PIN -->
+    <string name="pin_buat_judul">Atur Kunci PIN</string>
+    <string name="pin_buat_petunjuk">Buat PIN 4 sampai 6 digit untuk melindungi data warga pada perangkat ini.</string>
+    <string name="pin_masuk_judul">Akses SIMWarga</string>
+    <string name="pin_masuk_petunjuk">Masukkan PIN keamanan Anda untuk membuka aplikasi.</string>
+    <string name="pin_hint">PIN (4-6 digit angka)</string>
+    <string name="pin_konfirmasi_hint">Ulangi PIN</string>
+    <string name="pin_simpan">Simpan PIN</string>
+    <string name="masuk">Buka Aplikasi</string>
+    <string name="pin_format_error">PIN harus berupa 4 hingga 6 digit angka.</string>
+    <string name="pin_tidak_cocok">Konfirmasi PIN tidak sesuai.</string>
+    <string name="pin_salah">PIN salah. Silakan coba kembali.</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_judul">Ringkasan Warga</string>
+    <string name="stat_total_kk">Total KK</string>
+    <string name="stat_total_jiwa">Total Jiwa</string>
+    <string name="stat_laki">Laki-laki</string>
+    <string name="stat_perempuan">Perempuan</string>
+    <string name="btn_lihat_semua_kk">Buka Daftar KK</string>
+    <string name="btn_tambah_kk_cepat">Tambah KK Baru</string>
+
+    <!-- Keluarga List -->
+    <string name="keluarga_list_judul">Daftar Kartu Keluarga</string>
+    <string name="cari_keluarga_hint">Cari No. KK, nama warga, NIK, alamat...</string>
+    <string name="tambah_kk">Tambah KK</string>
+    <string name="empty_keluarga">Belum ada data Kartu Keluarga tersimpan.\nTekan tombol + untuk menambahkan KK baru.</string>
+    <string name="empty_keluarga_cari">Tidak ditemukan data warga yang sesuai dengan kata kunci pencarian.</string>
+    <string name="format_jumlah_jiwa">%1$d jiwa</string>
+    <string name="format_rt_rw">RT %1$s / RW %2$s</string>
+
+    <!-- Keluarga Detail -->
+    <string name="keluarga_detail_judul">Rincian Kartu Keluarga</string>
+    <string name="section_info_kk">Informasi KK</string>
+    <string name="section_anggota">Daftar Anggota Keluarga</string>
+    <string name="label_no_kk">No. KK</string>
+    <string name="label_alamat">Alamat Lengkap</string>
+    <string name="label_rt_rw">RT / RW</string>
+    <string name="label_kelurahan">Kelurahan / Desa</string>
+    <string name="label_kecamatan">Kecamatan</string>
+    <string name="label_kabupaten">Kabupaten / Kota</string>
+    <string name="tambah_anggota">Tambah Anggota</string>
+    <string name="empty_anggota">Belum ada anggota keluarga yang terdaftar dalam KK ini.</string>
+    <string name="edit_kk">Ubah KK</string>
+    <string name="hapus_kk">Hapus KK</string>
+    <string name="hapus_kk_dialog_title">Hapus Kartu Keluarga?</string>
+    <string name="hapus_kk_dialog_msg">Seluruh data KK No. %1$s beserta semua anggota di dalamnya akan dihapus secara permanen. Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="hapus_anggota_dialog_title">Hapus Anggota?</string>
+    <string name="hapus_anggota_dialog_msg">Apakah Anda yakin ingin menghapus data anggota %1$s (NIK: %2$s)?</string>
+
+    <!-- Form KK -->
+    <string name="form_kk_tambah_judul">Tambah Kartu Keluarga</string>
+    <string name="form_kk_edit_judul">Ubah Kartu Keluarga</string>
+    <string name="hint_no_kk">Nomor KK (16 digit angka)</string>
+    <string name="hint_alamat">Alamat (Jalan, Gang, No. Rumah)</string>
+    <string name="hint_rt">RT (contoh: 001)</string>
+    <string name="hint_rw">RW (contoh: 005)</string>
+    <string name="hint_kelurahan">Kelurahan / Desa</string>
+    <string name="hint_kecamatan">Kecamatan</string>
+    <string name="hint_kabupaten">Kabupaten / Kota</string>
+
+    <!-- Form Anggota -->
+    <string name="form_anggota_tambah_judul">Tambah Anggota Keluarga</string>
+    <string name="form_anggota_edit_judul">Ubah Data Anggota</string>
+    <string name="hint_nik">NIK (16 digit angka)</string>
+    <string name="hint_nama_lengkap">Nama Lengkap Sesuai KTP</string>
+    <string name="hint_jenis_kelamin">Jenis Kelamin</string>
+    <string name="label_laki">Laki-laki (L)</string>
+    <string name="label_perempuan">Perempuan (P)</string>
+    <string name="hint_tempat_lahir">Tempat Lahir</string>
+    <string name="hint_tanggal_lahir">Tanggal Lahir (HH/BB/TTTT)</string>
+    <string name="hint_status_hubungan">Status Hubungan dalam Keluarga</string>
+    <string name="hint_agama">Agama</string>
+    <string name="hint_pendidikan">Pendidikan Terakhir</string>
+    <string name="hint_pekerjaan">Pekerjaan</string>
+    <string name="hint_status_perkawinan">Status Perkawinan</string>
+    <string name="hint_kewarganegaraan">Kewarganegaraan</string>
+    <string name="pilih_tanggal">Pilih Tanggal Lahir</string>
+
+    <!-- Search -->
+    <string name="cari_judul">Pencarian Warga</string>
+    <string name="cari_petunjuk">Ketik No. KK, NIK, nama lengkap, atau alamat warga untuk mencari.</string>
+
+    <!-- Excel Export & Import -->
+    <string name="backup_judul">Impor &amp; Ekspor Excel</string>
+    <string name="backup_section_export">Ekspor Data ke Excel (.xlsx)</string>
+    <string name="backup_desc_export">Simpan seluruh data Kartu Keluarga dan warga ke dalam satu berkas spreadsheet Excel (.xlsx). Berkas ini dapat langsung Anda buka dan sunting di Microsoft Excel, WPS Office, atau Google Sheets.</string>
+    <string name="btn_buat_backup">Ekspor ke Berkas Excel (.xlsx)</string>
+
+    <string name="backup_section_import">Impor Data dari Excel (.xlsx / .csv)</string>
+    <string name="backup_desc_import">Masukkan data warga secara massal dari berkas spreadsheet Excel. Sistem otomatis mengelompokkan setiap anggota ke nomor KK masing-masing dan mengecek duplikasi NIK.</string>
+    <string name="btn_pulihkan_backup">Pilih Berkas Excel untuk Diimpor</string>
+    <string name="btn_unduh_template">Unduh Contoh Format Excel</string>
+
+    <string name="import_confirm_title">Konfirmasi Impor Data Excel</string>
+    <string name="import_confirm_msg">Data warga pada berkas Excel yang dipilih akan dimasukkan ke database SIMWarga. Anggota keluarga akan otomatis dikelompokkan sesuai No. KK masing-masing. Lanjutkan?</string>
+
+    <string name="import_result_title">Laporan Hasil Impor Excel</string>
+    <string name="import_result_msg">Selesai memproses %1$d baris data:\n\n• %2$d Kartu Keluarga berhasil dimasukkan/diperbarui\n• %3$d Jiwa warga berhasil dimasukkan/diperbarui%4$s</string>
+
+    <!-- Buttons & Common Actions -->
+    <string name="simpan">Simpan Data</string>
+    <string name="batal">Batal</string>
+    <string name="hapus">Hapus</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="tutup">Tutup</string>
+
+    <!-- Validation & Alerts -->
+    <string name="err_no_kk_invalid">Nomor KK harus tepat 16 digit angka.</string>
+    <string name="err_no_kk_duplicate">Nomor KK sudah terdaftar dalam sistem.</string>
+    <string name="err_nik_invalid">NIK harus tepat 16 digit angka.</string>
+    <string name="err_nik_duplicate">NIK ini sudah terdaftar pada database (tidak boleh duplikat).</string>
+    <string name="err_field_required">Bagian ini wajib diisi.</string>
+    <string name="msg_simpan_sukses">Data berhasil disimpan.</string>
+    <string name="msg_hapus_sukses">Data berhasil dihapus.</string>
+    <string name="msg_excel_export_sukses">Berkas data Excel (.xlsx) berhasil disimpan ke memori HP.</string>
+    <string name="msg_excel_export_gagal">Gagal mengekspor data ke berkas Excel.</string>
+    <string name="msg_excel_import_sukses">Impor data Excel berhasil diselesaikan.</string>
+    <string name="msg_excel_import_gagal">Gagal membaca atau mengimpor berkas Excel.</string>
+    <string name="msg_template_sukses">Contoh format berkas Excel (.xlsx) berhasil disimpan.</string>
+    <string name="msg_template_gagal">Gagal membuat berkas contoh format Excel.</string>
+</resources>
