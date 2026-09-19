@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizki Dwi Sandy | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1e3a5f',
+                        teal: '#0d9488',
+                        bgcol: '#f8fafc',
+                        textcol: '#1a1a1a'
+                    },
+                    fontFamily: {
+                        sans: [
+                            '-apple-system', 
+                            'BlinkMacSystemFont', 
+                            'Segoe UI', 
+                            'Roboto', 
+                            'Oxygen', 
+                            'Ubuntu', 
+                            'Cantarell', 
+                            'Open Sans', 
+                            'Helvetica Neue', 
+                            'sans-serif'
+                        ]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        a:focus, button:focus {
+            outline: 2px solid #0d9488;
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-teal selection:text-white">
+
+    <div class="max-w-3xl mx-auto px-6 py-16 md:py-24 space-y-24">
+
+        <!-- Header -->
+        <header class="space-y-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-navy tracking-tight">Rizki Dwi Sandy</h1>
+            <p class="text-xl text-gray-700 font-medium">Junior Fullstack Web & Android Developer</p>
+            <div class="pt-2">
+                <a href="https://github.com/rizdwi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-teal font-medium hover:text-navy transition-colors">
+                    Lihat GitHub Saya
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- About -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-navy border-b-2 border-gray-200 pb-2">Profil</h2>
+            <div class="text-gray-700 space-y-4 text-lg">
+                <p>
+                    Saya adalah lulusan S1 Teknik Informatika dengan ketertarikan pada pengembangan perangkat lunak yang fungsional dan terstruktur. Saya fokus pada proses membangun aplikasi dari tahap perancangan basis data hingga implementasi antarmuka pengguna, baik untuk platform web maupun Android.
+                </p>
+                <p>
+                    Pendekatan saya dalam pemrograman mengutamakan solusi yang praktis, basis kode yang bersih, dan sistem yang dapat diandalkan untuk memecahkan masalah nyata.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="space-y-12">
+            <h2 class="text-2xl font-bold text-navy border-b-2 border-gray-200 pb-2">Proyek</h2>
+
+            <!-- Project 1: SIMWarga -->
+            <div class="py-2">
+                <div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-3">
+                    <h3 class="text-xl font-bold text-navy">SIMWarga (Sistem Manajemen Warga)</h3>
+                    <span class="text-sm font-medium text-gray-500 uppercase tracking-wide mt-1 md:mt-0">Aplikasi Android Native</span>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Aplikasi untuk mengelola data identitas warga (KK dan NIK) di tingkat RT/RW. Dirancang untuk bekerja sepenuhnya tanpa koneksi internet (offline-first). Memiliki fitur impor dan ekspor data ke format Excel (.xlsx) serta keamanan akses menggunakan PIN yang dilindungi algoritma SHA-256.
+                </p>
+                <div class="mb-4">
+                    <p class="font-medium text-navy text-sm">Pencapaian Teknis:</p>
+                    <p class="text-gray-700 text-sm">Membangun modul pembaca dan penulis file OpenXML dari awal menggunakan Java standar tanpa dependensi berat seperti Apache POI, sehingga ukuran akhir aplikasi hanya 6.4 MB.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">Kotlin</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">Room DB</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">MVVM</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">Material Design 3</span>
+                </div>
+                <a href="https://github.com/rizdwi/SIMWarga" target="_blank" rel="noopener noreferrer" class="text-teal font-medium hover:underline focus:outline-none">Repositori SIMWarga</a>
+            </div>
+
+            <!-- Project 2: SelarasKas -->
+            <div class="bg-white border border-gray-200 p-6 md:p-8 rounded-sm shadow-sm">
+                <div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-3">
+                    <h3 class="text-xl font-bold text-navy">SelarasKas (Manajemen Keuangan)</h3>
+                    <span class="text-sm font-medium text-gray-500 uppercase tracking-wide mt-1 md:mt-0">Aplikasi Web Fullstack</span>
+                </div>
+                <p class="text-gray-700 mb-4">
+                    Sistem pencatatan keuangan pribadi untuk melacak pemasukan dan pengeluaran harian. Menyediakan dasbor analitik visual berbasis grafik, fitur pelacakan target tabungan, dan struktur basis data yang mendukung akses multi-pengguna.
+                </p>
+                <div class="mb-4">
+                    <p class="font-medium text-navy text-sm">Pencapaian Teknis:</p>
+                    <p class="text-gray-700 text-sm">Menerapkan pola desain Model-View-Controller (MVC) yang bersih terpadu dengan desain basis data relasional yang dinormalisasi dengan baik.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">Laravel</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">PHP</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">JavaScript</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 text-xs font-medium rounded">MySQL</span>
+                </div>
+                <a href="https://github.com/rizdwi/selaraskas" target="_blank" rel="noopener noreferrer" class="text-teal font-medium hover:underline focus:outline-none">Repositori SelarasKas</a>
+            </div>
+
+            <!-- Project 3: BookLapang -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 border-t border-dashed border-gray-300">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold text-navy mb-1">BookLapang (Booking Lapangan)</h3>
+                    <span class="block text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Aplikasi Web Fullstack</span>
+                    <p class="text-gray-700 mb-4">
+                        Sistem reservasi lapangan olahraga dengan manajemen peran pengguna ganda (admin dan pelanggan). Dilengkapi halaman administrasi untuk pemantauan pendapatan serta manajemen operasional lapangan dan jadwal secara penuh.
+                    </p>
+                    <div class="mb-4 md:mb-0">
+                        <p class="font-medium text-navy text-sm">Pencapaian Teknis:</p>
+                        <p class="text-gray-700 text-sm">Mencegah masalah pemesanan ganda (double booking) dengan mengimplementasikan validasi jadwal yang ketat dan menggunakan fitur transaksi bawaan basis data.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-1 md:border-l md:border-gray-200 md:pl-6 flex flex-col justify-between">
+                    <div>
+                        <p class="font-medium text-navy text-sm mb-2">Teknologi:</p>
+                        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+                            <li>&bull; Laravel 11</li>
+                            <li>&bull; Blade Templates</li>
+                            <li>&bull; Tailwind CSS</li>
+                            <li>&bull; SQLite</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="https://github.com/rizdwi/BookLapang" target="_blank" rel="noopener noreferrer" class="text-teal font-medium hover:underline focus:outline-none">Repositori BookLapang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-navy border-b-2 border-gray-200 pb-2">Keterampilan Teknis</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Bahasa Pemrograman</h3>
+                    <p class="text-gray-700">PHP, Kotlin, JavaScript, SQL, HTML, CSS</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Framework & Pustaka</h3>
+                    <p class="text-gray-700">Laravel, Android SDK, Bootstrap, Tailwind CSS</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Basis Data</h3>
+                    <p class="text-gray-700">MySQL, SQLite, Room Database</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Alat Pengembangan</h3>
+                    <p class="text-gray-700">Git, GitHub, VS Code, Android Studio, Composer</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Arsitektur Perangkat Lunak</h3>
+                    <p class="text-gray-700">MVC, MVVM, Repository Pattern</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-navy border-b-2 border-gray-200 pb-2">Kontak</h2>
+            <p class="text-gray-700">
+                Jika Anda memiliki pertanyaan teknis, diskusi pengembangan, atau potensi kolaborasi pekerjaan, Anda dapat menghubungi saya melalui informasi di bawah ini.
+            </p>
+            <div class="space-y-2">
+                <div class="flex items-center">
+                    <span class="w-24 text-gray-500 font-medium text-sm uppercase tracking-wide">Telepon</span>
+                    <a href="tel:+6281385084327" class="text-navy hover:text-teal font-medium transition-colors">081385084327</a>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-24 text-gray-500 font-medium text-sm uppercase tracking-wide">GitHub</span>
+                    <a href="https://github.com/rizdwi" target="_blank" rel="noopener noreferrer" class="text-navy hover:text-teal font-medium transition-colors">github.com/rizdwi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-12 border-t border-gray-200 text-center md:text-left text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2026 Rizki Dwi Sandy.</p>
+            <p class="mt-2 md:mt-0">Indonesia</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
